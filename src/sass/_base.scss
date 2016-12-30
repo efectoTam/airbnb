@@ -78,6 +78,19 @@
 	.opciones{
 		padding-top: 15px;
 	}
+	.on-off{
+		margin-top: 10px;
+		.toggle{
+			border-radius: 15px;
+		}
+		.toggle-on{
+			background-color: $verde;
+			color: #FFFFFF;
+		}
+		.btn{
+			padding: 5px 20px;
+		}
+	}
 	.rango{
 		max-width: 100%;
 	}
@@ -105,8 +118,9 @@
 }
 /* Fin Tam */
 /*Comienzo Jose */ 
-.advanced-filter {
-	
+.padding-section {
+	padding-top:20px;
+	font-size:13px;
 	.fa-calendar {
 		font-size:20px;
 		margin-left:10px;
