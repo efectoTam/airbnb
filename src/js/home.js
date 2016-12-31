@@ -1,5 +1,5 @@
 //js seccionExperiencias
-var posicion = 0;
+/*var posicion = 0;
 	var imagenes = new Array();
 	$(document).ready(function() {
 		//alert(jQuery('.texto').html());
@@ -41,9 +41,6 @@ var posicion = 0;
 		return false;
 	});
 
-});
+});*/
 
 /*date picker parte nadia */
-$(function () {
-	$("#datepicker").datepicker();
-});

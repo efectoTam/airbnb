@@ -2,9 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Airbnb</title>
+  <link rel="shortcut icon" type="image/x-icon" href="src/img/favicon.ico">
   <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
   <link rel="stylesheet" type="text/css" href="dist/css/style.min.css">
 </head>
 <body>
@@ -106,7 +109,29 @@
 		<div class="row">
 			<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
 				<div class="borde">
-					<div id="datepicker"></div>
+					<div class="dates-wrapper group">
+						
+						<div class="field clearfix date-range-start date-wrapper">
+							<div class="label">
+								<label for="datepicker-start">Start:</label>
+							</div>
+							<div class="input">
+								<input type="date" name="experience-start" id="datepicker-start" class="input-text" placeholder="dd/mm/yyyy">
+							</div>
+							<a href="#" class="calendar-btn calendar-start hide-text">View calendar</a>
+						</div>
+
+						<div class="field clearfix date-range-start date-wrapper">
+							<div class="label">
+								<label for="datepicker-end">End:</label>
+							</div>
+							<div class="input">
+								<input type="date" name="experience-end" id="datepicker-end" class="input-text" placeholder="dd/mm/yyyy">
+							</div>
+							<a href="#" class="calendar-btn hide-text">View calendar</a>
+						</div>
+						
+					</div>
 				</div>
 			</div> 
 		</div>
@@ -221,8 +246,9 @@
 	</footer>
 	<!-- Fin footer Vale -->
 	</div>
-  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-  <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+  
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
   <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="dist/js/script.min.js"></script>
