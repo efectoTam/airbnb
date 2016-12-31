@@ -13,6 +13,18 @@ ul
 }
 /* Fin Majo  */
 /*Comienzo Nadia */
+.borde{
+ 	padding: 3px 10px;
+	border:5px solid $gris-linea;
+ 	 border-radius: 20px;	
+
+
+	.ui-widget {
+	font-size: 1.5em;
+	font-style: italic;
+    }
+
+}
 
 /* Fin Nadia  */
 /* Comienzo Dani */
