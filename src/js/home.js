@@ -81,5 +81,13 @@ $(document).ready(function(touch){
 
 /*Link desde home a search*/
 $(".btnbus").click(function(){
-    	window.location.href = "search.html";
+	var ciudad = $('.ciudad').val();
+	localStorage.setItem("la-ciudad", ciudad);
+    var llegada = $('#datepicker-start').val();
+    localStorage.setItem("fecha-llegada", llegada);
+    var salida = $('#datepicker-end').val();
+    localStorage.setItem("fecha-salida", salida);
+    var huesped = $('.personas').val();
+    localStorage.setItem("num-huesped", huesped);
+    window.location.href = "search.html";
 });
