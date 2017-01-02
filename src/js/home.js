@@ -44,15 +44,37 @@ var posicion = 0;
 });
 
 /*date picker parte nadia */
-$(function () {
-	$('#datetimepicker6').datetimepicker();
-	$('#datetimepicker7').datetimepicker({
-            useCurrent: false //Important! See issue #1075
-    });
-	$("#datetimepicker6").on("dp.change", function (e) {
-		$('#datetimepicker7').data("DateTimePicker").minDate(e.date);
+/*if ( $('[type="date"]').prop('type') != 'date' ) {
+} */
+
+if ( $('html').hasClass('no-touch') ) {
+	var $input, $btn;
+	$( ".date-wrapper" ).each(function( index ) {
+		$input = $(this).find('input');
+		$btn = $(this).find('.calendar-btn');
+		$input.attr('type', 'text');
+		var pickerStart = new Pikaday({
+			field: $input[0],
+			trigger: $btn[0],
+			container: $(this)[0],
+			format: 'DD/MM/YYYY',
+			firstDay: 1
+		});
+		$btn.show();
 	});
-	$("#datetimepicker7").on("dp.change", function (e) {
-		$('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
+} else {
+	$('.date-wrapper input').attr('type', 'date');
+	$('.calendar-btn').hide();
+}
+
+/*select city*/
+$(document).ready(function(touch){
+	$(".custom-select").each(function(touch){
+		$(this).wrap("<span class='select-wrapper'></span>");
+		$(this).after("<span class='holder'></span>");
 	});
+	$(".custom-select").change(function(touch){
+		var selectedOption = $(this).find(":selected").text();
+		$(this).next(".holder").text(selectedOption);
+	}).trigger('change');
 });
