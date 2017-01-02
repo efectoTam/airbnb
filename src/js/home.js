@@ -78,3 +78,8 @@ $(document).ready(function(touch){
 		$(this).next(".holder").text(selectedOption);
 	}).trigger('change');
 });
+
+/*Link desde home a search*/
+$(".btnbus").click(function(){
+    	window.location.href = "search.html";
+});
