@@ -213,7 +213,7 @@ select {
 	 border-color:transparent transparent #909090 transparent; 
 }
 /*boton buscar*/
-button{
+.btnbus{
 	width:40%;
 	border-radius:6px;
 	padding:6px;
@@ -357,7 +357,17 @@ button{
 	}
 
 
+	.opciones-masinfo {
+		color:#00B7B9;
+	}
 
+	.boton-filtros {
+		width:48%;
+		float:left;
+		margin:2px;
+
+
+	}
 
 }
 
