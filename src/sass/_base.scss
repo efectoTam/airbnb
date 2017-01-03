@@ -225,18 +225,36 @@ button{
 
 /* Fin Nadia  */
 /* Comienzo Dani */
+a {
+	text-decoration: none;
+}
 #seccionExperiencias {
 	float: left;
-	width: 601px;
+	width: 100%;
 	overflow: hidden;
-	height: 205px;
-	position: relative;
-	margin-top: 20px;
+	margin-bottom: 30px;
+	h3 {
+		font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+		font-size: 19px !important;
+		line-height: 24px !important;
+		padding-top: 0px !important;
+		padding-bottom: 0px !important;
+		color: $grish3 !important;
+		margin: 0px !important;
+		margin-bottom: 24px !important;
+	}
 	.flecha {
 		position: absolute;
 		z-index: 1;
-		top: 50%;
+		top: 80%;
 		margin-top: -9px;
+		cursor: pointer !important;
+		background-color: transparent !important;
+		border: 0px !important;
+		padding: 0px !important;
+		display: block !important;
+		color: $grish3;
+		font-size: 40px;
 	}
 	.flechaIzq {
 		left: 10px;
@@ -244,25 +262,53 @@ button{
 	.flechaDer {
 		right: 10px;
 	}
-	.carruselExperiencias {
-		width: 4000px;
-		left: 0px;
-		position: absolute;
-		z-index: 0;
-		.tarjeta {
-			float: left;
-			height: 203px;
-			margin-right: 5px;
-			width: 195px;
-			text-align:center;
-			border:#CCCCCC 1px solid;
-			img {
-				cursor:pointer;
+	#contenedorCarr {
+		width: 100%;
+		overflow: hidden;
+		.carruselExperiencias {
+			width: 1637px;
+			.tarjeta {
+				float: left;
+				margin-right: 10px;
+				width: 17%;
+				height: 480px;
+				img {
+					cursor:pointer;
+					width: 100%;
+				}
+				.precioExp {
+					font-weight: 700 !important;
+					color: $grish3 !important;
+					font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+					word-wrap: break-word !important;
+					font-size: 15px !important;
+					line-height: 18px !important;
+					letter-spacing: 0.2px !important;
+					margin: 0px !important;
+					padding-top: 0px !important;
+					padding-bottom: 0px !important;
+					display: inline !important;
+					padding-right: 2px;
+				}
+				.descripcionExp {
+					font-weight: 200 !important;
+					color: $grish3 !important;
+					font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+					margin: 0px !important;
+					word-wrap: break-word !important;
+					font-size: 15px !important;
+					line-height: 18px !important;
+					letter-spacing: 0.2px !important;
+					padding-top: 0px !important;
+					padding-bottom: 0px !important;
+					display: inline !important;
+					box-sizing: border-box;
+					white-space: normal !important;
+				}
 			}
 		}
 	}
 }
-
 /* Fin Dani */
 /* Comienzo   Vale */
 /* Fin  Vale */
