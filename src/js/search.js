@@ -6,4 +6,13 @@ $(document).ready(function(){
 	$(".salida-home").val(fechados);
 	var huesped=localStorage.getItem("num-huesped");
 	$(".huesped-home").val(huesped);
+	$('#mostrar-filtros').hide();
 });
+
+$('#mostrar').click(function(){
+	$('#mostrar-filtros').show();
+});
+
+$('#aplicar-filtros').click(function(){
+	$('#mostrar-filtros').hide();
+})
