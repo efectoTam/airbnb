@@ -344,6 +344,7 @@ select {
 .padding-section {
 	padding-top:20px;
 	font-size:13px;
+	padding-left: 20px;
 	.fa-calendar {
 		font-size:20px;
 		margin-left:10px;
@@ -380,7 +381,7 @@ select {
     height: 38px;
     z-index: 1;
     position: relative;
-    margin-top: 256px;
+    margin-top: 150px;
 	position:absolute;
 }
 /*FOTOS*/
@@ -416,7 +417,7 @@ span.text2{
 	background-repeat: no-repeat;
 	background-position: center;
 	border:2px solid white;
-	margin-left: 507px;
+	margin-left: 250px;
 	margin-top:-40px;
 }
 /*BOTON*/
@@ -459,5 +460,6 @@ hr {
 .piepag{
 	color:#848484;
 	font-size: 15px;
+	margin-left: 20px;
 }
 /* Fin Pachi */ 
