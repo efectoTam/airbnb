@@ -9,7 +9,7 @@ var posicion = 0;
 			$('.flechaIzq').css('display','none');
 		}
 
-		$('.flechaIzq').live('click',function(){
+		$('.flechaIzq').on('click',function(){
 			if(posicion>0){
 				posicion = posicion-1;
 			}else{
@@ -31,7 +31,7 @@ var posicion = 0;
 		$(this).css('opacity','1');
 	});
 
-	$('.flechaDer').live('click',function(){
+	$('.flechaDer').on('click',function(){
 		if(numeroImg>posicion+4){
 			posicion = posicion+1;
 		}else{
@@ -41,4 +41,18 @@ var posicion = 0;
 		return false;
 	});
 
+});
+
+/*date picker parte nadia */
+$(function () {
+	$('#datetimepicker6').datetimepicker();
+	$('#datetimepicker7').datetimepicker({
+            useCurrent: false //Important! See issue #1075
+    });
+	$("#datetimepicker6").on("dp.change", function (e) {
+		$('#datetimepicker7').data("DateTimePicker").minDate(e.date);
+	});
+	$("#datetimepicker7").on("dp.change", function (e) {
+		$('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
+	});
 });
