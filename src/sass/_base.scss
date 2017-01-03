@@ -1,6 +1,6 @@
 /* Comienzo Majo */
 .logo1{
-	width: 18%;
+	width: 23%;
 	height: 24%;
 }
 ul 
@@ -14,13 +14,13 @@ ul
 .titlecentral{
 	margin-left: 18%;
 }
-.imgcarrusel{
-	padding-bottom: 2%;
-	padding-top: 2%;
-}
 .btnnovedades{
+	margin-top: 2%;
 	margin-bottom: 3%;
-	margin-top:2%; 
+	border-radius: 8px;
+}
+.sectcarrusel{
+	margin-bottom: 3%;
 }
 /* Fin Majo  */
 /*Comienzo Nadia */
@@ -213,7 +213,7 @@ select {
 	 border-color:transparent transparent #909090 transparent; 
 }
 /*boton buscar*/
-button{
+.btnbus{
 	width:40%;
 	border-radius:6px;
 	padding:6px;
@@ -403,10 +403,107 @@ a {
 	}
 
 
+	.opciones-masinfo {
+		color:#00B7B9;
+	}
 
+	.boton-filtros {
+		width:48%;
+		float:left;
+		margin:2px;
+
+
+	}
 
 }
 
 /* Fin Jose */ 
 /*Comienzo Pachi */ 
+/*CAJA TRANSPARENTE*/
+.transparencia{
+	background-color: rgba(0,0,0,.7);
+    width: 180px;
+    height: 38px;
+    z-index: 1;
+    position: relative;
+    margin-top: 256px;
+	position:absolute;
+}
+/*FOTOS*/
+.d1, .d2 , .d3 ,.d4  {
+	height:80%;
+	width:100%;
+	display: inline-block;
+}
+.d3, .d4 {
+	margin-top: 20px;
+}
+/*TEXTOS*/
+.text1,{
+	color:white;
+	margin-top: 3px;
+    margin-left: 25px;
+    position:absolute;
+    width:100%;
+    font-size: 22px;
+}
+span.text2{
+	color:#F2F2F2;
+    margin-top: -3px;
+    margin-left: 16px;
+    font-size: 10px;
+}
+/*CIRCULO DETALLE*/
+.circulo {
+	width:80px;
+	height:80px;
+	border-radius:40px;
+	display:inline-block;
+	background-repeat: no-repeat;
+	background-position: center;
+	border:2px solid white;
+	margin-left: 507px;
+	margin-top:-40px;
+}
+/*BOTON*/
+.btn-group-xs {
+	border-radius: 5px;
+    background-color: #2FA99B;
+    color: #fff;
+    margin-top:-49px;
+    margin-left:13px;
+    height: 27px;
+    width: 71px;
+    border: 1px solid #2FA99B;
+    display:inline-block;
+}
+/*DESCRIPCION HABITACIONES*/
+.descripcion{
+	    margin-top: -37px;
+    margin-left: 90px;
+}
+.descripcion2 {
+	margin-left:24px;
+	margin-top: -10px;
+}
+/*PAGINAS*/
+.busqueda {
+	margin-top: 50px;
+
+}
+/*botones pagina*/
+.btn-secondary{
+	background-color: white;
+	border: 1px solid grey;
+	margin-left:10px;
+}
+hr {
+	width: 100%;
+    height: 1px;
+    background-color: #eee;
+}
+.piepag{
+	color:#848484;
+	font-size: 15px;
+}
 /* Fin Pachi */ 
