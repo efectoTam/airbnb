@@ -15,7 +15,7 @@
 		<!-- Majo , logo, menu , carrusel -->
 		<header>
 			<div class="row">
-				<div class="col-xs-4 col-md-4">
+				<div class="col-xs-3 col-md-3">
 					<img src="src/img/logo.png" alt="" class="logo1">
 				</div>
 			</div>
@@ -56,17 +56,18 @@
 					<h5>
 						Alojamientos, experiencias y lugares, todo en una sola aplicación.
 					</h5>
-					<button type="button" class="btn btn-default btnnovedades">Descubre las últimas novedades</button>
-					<br>
+					<button type="button" class="btn btn-default btnnovedades href="#experiencias">Descubre las últimas novedades</button>
 				</div>
 			</div>
 		</header>
-		<section>
+		<section class="">
 			<div class="row">
 				<div class="col">
-					<div id="myCarousel" class="carousel slide" data-ride="carousel">
+					<div class="row">
+				<div class="col">
+					<div id="myCarousel" class="carousel slide sectcarrusel" data-ride="carousel">
 						<!-- Indicators -->
-						<ol class="carousel-indicators">
+						<ol class="carousel-indicators fotoscarusel">
 							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 							<li data-target="#myCarousel" data-slide-to="1"></li>
 							<li data-target="#myCarousel" data-slide-to="2"></li>
@@ -74,19 +75,19 @@
 						</ol>
 						<!-- Wrapper for slides -->
 						<div class="carousel-inner" role="listbox">
-							<div class="item active imgcarrusel">
-								<img src="src/img/posters.png alt="">
+							<div class="item active">
+								<img src="src/img/posters.png" alt="Airbnb">
 							</div>
 							<div class="item">
-								<img src="src/img/posters.png" alt="" class="imagencarrusel">
-							</div>
-
-							<div class="item">
-								<img src="src/img/posters.png" alt="">
+								<img src="src/img/slide1.jpg" alt="Airbnb">
 							</div>
 
 							<div class="item">
-								<img src="src/img/posters.png" alt="">
+								<img src="src/img/slide2.jpg" alt="Airbnb">
+							</div>
+
+							<div class="item">
+								<img src="src/img/slide3.jpg" alt="Airbnb">
 							</div>
 						</div>
 						<!-- Left and right controls -->
@@ -112,13 +113,13 @@
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 					<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
 						<div class="main">
-							<select class="custom-select">
-								<option value="0">cuidad</option>   
-								<option value="1">Santiago</option>   
-								<option value="2">Valparaiso</option> 
-								<option value="3">Puerto Montt</option> 
-								<option value="4">San Pedro de Atacama</option> 
-								<option value="5">Isla de Pascua</option>
+							<select class="custom-select ciudad">
+								<option>Cuidad</option>   
+								<option>Santiago</option>   
+								<option>Valparaiso</option> 
+								<option>Puerto Montt</option> 
+								<option>San Pedro de Atacama</option> 
+								<option>Isla de Pascua</option>
 							</select>
 						</div>
 					</div>
@@ -126,7 +127,7 @@
 						<div class="dates-wrapper group">
 							<div class="field clearfix date-range-start date-wrapper">
 								<div class="label">
-									<label class="txt" for="datepicker-start">llegada</label>
+									<label class="txt" for="datepicker-start">Llegada</label>
 								</div>
 								<div class="input">
 									<input type="date" name="experience-start" id="datepicker-start" class="input-text" placeholder="dd/mm/yyyy">
@@ -147,7 +148,7 @@
 						</div>
 					</div>
 					<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-						<select class="form-control">
+						<select class="form-control personas">
 							<option>1 huésped</option>
 							<option>2 huéspedes</option>
 							<option>3 huéspedes</option>
