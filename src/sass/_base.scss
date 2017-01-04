@@ -339,39 +339,49 @@ select {
 		}
 	}
 }
+
+.mapa-estatico{
+	position:fixed;
+}
 /* Fin Tam */
 /*Comienzo Jose */ 
 .padding-section {
-	padding-top:20px;
-	font-size:13px;
-	padding-left: 20px;
-	.fa-calendar {
-		font-size:20px;
-		margin-left:10px;
-	}
-	
-	.linea-borde {
-		border-bottom: 1px solid $gris-lineas;
-		padding-bottom:20px;
-		margin-bottom:20px;
+    padding-top:20px;
+    padding-bottom:20px;
+    font-size:13px;
+    padding-left: 20px;
+    .fa-calendar {
+        font-size:20px;
+        margin-left:10px;
+    }
+    
+    .linea-borde {
+        border-bottom: 1px solid $gris-lineas;
+        padding-bottom:20px;
+        margin-bottom:20px;
+    }
 
-	}
+    .opciones-masinfo {
+        color:#00B7B9 ;
+    }
 
-
-	.opciones-masinfo {
-		color:#00B7B9;
-	}
-
-	.boton-filtros {
-		width:48%;
-		float:left;
-		margin:2px;
-
-
-	}
-
+    .boton-filtros {
+        width:48%;
+        float:left;
+        margin:2px;
+        
+    }
+    .btn-color {
+        background-color:$rosado;
+        color:white;
+        disabled: disabled;
+        &:hover {
+            background-color:$rosado;
+            color:white;
+        }
+    }
+    
 }
-
 /* Fin Jose */ 
 /*Comienzo Pachi */ 
 /*CAJA TRANSPARENTE*/
